@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="900"style="border:1px solid #000000;margin-left:30%">
+</canvas>  
+</body>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(370,300,300,0,2*Math.PI);
+        ctx.stroke();
+         var cx=document.getElementById("myCanvas");
+        var ctxw=c.getContext("2d");
+        ctxw.beginPath();
+        ctxw.moveTo(20,20);
+        ctxw.bezierCurveTo(20,100,200,100,500,500);
+        ctxw.stroke();
+    </script>
+</html>
